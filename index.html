@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -55,8 +54,8 @@
         }
 
         .header-icon {
-            width: 64px;
-            height: 64px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(8px);
@@ -64,11 +63,13 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 0.5rem;
+            overflow: hidden;
         }
 
-        .header-icon svg {
-            width: 54px;
-            height: 54px;
+        .header-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
         header h1 {
@@ -809,18 +810,7 @@
         </svg>
         <div class="header-content">
             <div class="header-icon">
-                <svg viewBox="0 0 64 64" role="img" aria-label="Brasão Família Camapum">
-                    <defs>
-                        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-                            <stop offset="0" stop-color="#ffffff" stop-opacity="0.95" />
-                            <stop offset="1" stop-color="#ffffff" stop-opacity="0.75" />
-                        </linearGradient>
-                    </defs>
-                    <path d="M32 6 C24 6 18 9 18 9 v18 c0 16 14 23 14 23 s14-7 14-23V9s-6-3-14-3z" fill="url(#g)" />
-                    <path d="M32 10 c-5 0-9 2-9 2v14c0 12 9 18 9 18s9-6 9-18V12s-4-2-9-2z" fill="none" stroke="#0f3460" stroke-opacity="0.45" stroke-width="2" />
-                    <text x="32" y="29" text-anchor="middle" font-family="Raleway, sans-serif" font-size="9" font-weight="800" fill="#0f3460">FAMILIA</text>
-                    <text x="32" y="42" text-anchor="middle" font-family="Raleway, sans-serif" font-size="9" font-weight="800" fill="#0f3460">CAMAPUM</text>
-                </svg>
+                <img src="https://raw.githubusercontent.com/catolevioreto1-spec/FAMILIA-CAMAPUM/main/logo-camapum.jpg" alt="Logo Família Camapum" />
             </div>
             <h1>GRUPO WHATSAPP FAMILIA CAMAPUM</h1>
             <div id="subtituloGrupo" class="header-note">
