@@ -1,0 +1,1393 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=yes" />
+    <title>GRUPO WHATSAPP FAMILIA CAMAPUM — MEMBROS QUE ESTÃO NO GRUPO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background: #f5f8fc;
+            color: #2d3748;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        /* ─── HEADER ─── */
+        header {
+            background: linear-gradient(135deg, #0f3460 0%, #1d4ed8 60%, #2563eb 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 2rem 1.5rem;
+        }
+
+        header svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+        }
+
+        .header-content {
+            position: relative;
+            max-width: 1280px;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-icon svg {
+            width: 54px;
+            height: 54px;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        header p {
+            color: #e0e7ff;
+            font-size: 1.125rem;
+            font-weight: 500;
+        }
+
+        .stats-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .stat-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1.25rem;
+            border-radius: 9999px;
+            color: white;
+            font-size: 0.875rem;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(8px);
+        }
+
+        .stat-badge.highlight {
+            background: rgba(255, 193, 7, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .stat-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .dot-green { background: #22c55e; }
+        .dot-gray { background: #9ca3af; }
+        .dot-yellow { background: #ffc107; }
+
+        /* ─── MAIN ─── */
+        main {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        /* ─── FORM SECTION ─── */
+        .form-section {
+            background: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 24px rgba(29, 78, 216, 0.08);
+            border: 1px solid #e0e7ff;
+            padding: 1.5rem;
+        }
+
+        .form-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-header-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 0.5rem;
+            background: #1d4ed8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .form-header h2 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #1f2937;
+        }
+
+        .form-header .badge {
+            margin-left: auto;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.25rem 0.5rem;
+            border-radius: 9999px;
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #6b7280;
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .form-group input {
+            padding: 0.625rem 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+            font-size: 0.875rem;
+            font-family: 'Source Sans 3', sans-serif;
+            transition: all 0.2s;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            ring: 2px solid #1d4ed8;
+            border-color: transparent;
+            box-shadow: 0 0 0 2px #1d4ed8;
+        }
+
+        .form-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        button {
+            padding: 0.625rem 1.25rem;
+            border-radius: 0.5rem;
+            border: none;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: 'Source Sans 3', sans-serif;
+        }
+
+        button:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        .btn-primary {
+            background: #198754;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #e5e7eb;
+            color: #4b5563;
+        }
+
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+            margin-left: auto;
+        }
+
+        /* ─── TABLE SECTION ─── */
+        .table-section {
+            background: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 24px rgba(29, 78, 216, 0.08);
+            border: 1px solid #e0e7ff;
+            overflow: hidden;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #f3f4f6;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            border: 1px solid #e5e7eb;
+            background: #f8fafc;
+            color: #1f2937;
+            padding: 0.45rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .tab-btn:hover {
+            border-color: #c7d2fe;
+            background: #eef2ff;
+        }
+
+        .tab-btn.active {
+            border-color: transparent;
+            background: #1d4ed8;
+            color: white;
+            box-shadow: 0 6px 18px rgba(29, 78, 216, 0.18);
+        }
+
+        .tab-count {
+            font-weight: 800;
+        }
+
+        .search-bar {
+            padding: 1rem;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .search-input-wrapper {
+            position: relative;
+        }
+
+        .search-input-wrapper i {
+            position: absolute;
+            left: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #9ca3af;
+            font-size: 1rem;
+        }
+
+        .search-input-wrapper input {
+            width: 100%;
+            padding: 0.625rem 0.75rem 0.625rem 2.5rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+            font-size: 0.875rem;
+            font-family: 'Source Sans 3', sans-serif;
+        }
+
+        .search-input-wrapper input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #1d4ed8;
+            border-color: transparent;
+        }
+
+        .search-info {
+            font-size: 0.75rem;
+            color: #9ca3af;
+            margin-top: 0.5rem;
+        }
+
+        .table-wrapper {
+            max-height: 600px;
+            overflow-y: auto;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            width: 100%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem;
+        }
+
+        thead {
+            background: #1d4ed8;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+
+        th {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            min-width: 100px;
+        }
+
+        td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        tbody tr {
+            transition: background-color 0.2s;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f0f6ff;
+        }
+
+        tbody tr:hover {
+            background: #e0ecff;
+        }
+
+        tbody tr.aniversario {
+            background: #fffbea;
+            box-shadow: inset 0 0 0 2px rgba(255, 193, 7, 0.3);
+        }
+
+        tbody tr.aniversario:nth-child(even) {
+            background: #fffbea;
+        }
+
+        .box-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .box-numeric {
+            background: #eff6ff;
+            color: #1e40af;
+        }
+
+        .box-alpha {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .box-yci {
+            background: #dbeafe;
+            color: #1d4ed8;
+        }
+
+        .socio-name {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .socio-name .nome-click {
+            color: #1d4ed8;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .socio-name .nome-click:hover {
+            color: #0f3460;
+        }
+
+        .socio-name.falecido {
+            text-decoration: line-through;
+            color: #9ca3af;
+            font-style: italic;
+            opacity: 0.65;
+        }
+
+        .socio-name .cake-icon {
+            color: #fbbf24;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-4px); }
+        }
+
+        .phone-number {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            color: #4b5563;
+        }
+
+        .phone-number i {
+            color: #9ca3af;
+            font-size: 0.75rem;
+        }
+
+        .sem-telefone {
+            color: #d1d5db;
+            font-size: 0.75rem;
+            font-style: italic;
+        }
+
+        .data-nasc {
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .data-nasc.aniversario {
+            color: #92400e;
+            font-weight: 700;
+        }
+
+        .actions {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-small {
+            padding: 0.375rem 0.75rem;
+            font-size: 0.75rem;
+            border-radius: 0.375rem;
+        }
+
+        .btn-edit {
+            background: #ffc107;
+            color: #000;
+        }
+
+        .btn-delete {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        .btn-whatsapp:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .table-footer {
+            padding: 0.75rem 1rem;
+            border-top: 1px solid #f3f4f6;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+            font-size: 0.75rem;
+            color: #9ca3af;
+        }
+
+        .footer-stats {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-stat {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: #9ca3af;
+        }
+
+        .no-results i {
+            font-size: 2rem;
+            opacity: 0.3;
+            margin-bottom: 0.5rem;
+        }
+
+        /* ─── FOOTER ─── */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.75rem;
+            color: #9ca3af;
+        }
+
+        /* ─── MODAL ─── */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .modal-header {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+
+        .modal-description {
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: flex-end;
+        }
+
+        .modal-buttons button {
+            flex: 1;
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 0.85rem;
+            }
+
+            .header-content {
+                padding: 1rem;
+            }
+
+            .stats-container {
+                flex-wrap: wrap;
+                gap: 0.4rem;
+            }
+
+            .stat-badge {
+                font-size: 0.75rem;
+                padding: 0.3rem 0.6rem;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-buttons {
+                flex-direction: column;
+            }
+
+            .form-buttons .btn-danger {
+                margin-left: 0;
+            }
+
+            .table-wrapper {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                width: 100%;
+            }
+
+            table {
+                font-size: 0.72rem;
+                min-width: 560px;
+            }
+
+            th, td {
+                padding: 0.4rem 0.45rem;
+                white-space: nowrap;
+            }
+
+            .actions {
+                flex-direction: column;
+                gap: 0.2rem;
+            }
+
+            .btn-small {
+                width: 100%;
+                justify-content: center;
+                font-size: 0.7rem;
+                padding: 0.3rem 0.5rem;
+            }
+
+            .table-footer {
+                flex-direction: column;
+                gap: 0.5rem;
+                font-size: 0.8rem;
+            }
+
+            .search-bar input {
+                font-size: 0.9rem;
+            }
+
+            .modal-content {
+                margin: 0.5rem;
+                padding: 1.2rem;
+                max-height: 95vh;
+                overflow-y: auto;
+            }
+
+            .btn {
+                font-size: 0.85rem;
+                padding: 0.55rem 1rem;
+            }
+
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .footer-info {
+                flex-direction: column;
+                gap: 0.3rem;
+                font-size: 0.72rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            .header-icon svg {
+                width: 44px;
+                height: 44px;
+            }
+
+            table {
+                font-size: 0.68rem;
+                min-width: 480px;
+            }
+
+            th, td {
+                padding: 0.35rem 0.3rem;
+            }
+
+            .stat-badge {
+                font-size: 0.68rem;
+            }
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            padding: 1rem 1.5rem;
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            z-index: 2000;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .toast.success {
+            border-left: 4px solid #22c55e;
+            color: #22c55e;
+        }
+
+        .toast.error {
+            border-left: 4px solid #dc3545;
+            color: #dc3545;
+        }
+
+        .toast.warning {
+            border-left: 4px solid #ffc107;
+            color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <svg viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,100 C150,180 350,0 600,100 C850,200 1050,20 1200,100 L1200,200 L0,200 Z" fill="white" />
+            <path d="M0,140 C200,60 400,180 600,140 C800,100 1000,160 1200,140 L1200,200 L0,200 Z" fill="white" opacity="0.5" />
+        </svg>
+        <div class="header-content">
+            <div class="header-icon">
+                <svg viewBox="0 0 64 64" role="img" aria-label="Brasão Família Camapum">
+                    <defs>
+                        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#ffffff" stop-opacity="0.95" />
+                            <stop offset="1" stop-color="#ffffff" stop-opacity="0.75" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M32 6 C24 6 18 9 18 9 v18 c0 16 14 23 14 23 s14-7 14-23V9s-6-3-14-3z" fill="url(#g)" />
+                    <path d="M32 10 c-5 0-9 2-9 2v14c0 12 9 18 9 18s9-6 9-18V12s-4-2-9-2z" fill="none" stroke="#0f3460" stroke-opacity="0.45" stroke-width="2" />
+                    <text x="32" y="29" text-anchor="middle" font-family="Raleway, sans-serif" font-size="9" font-weight="800" fill="#0f3460">FAMILIA</text>
+                    <text x="32" y="42" text-anchor="middle" font-family="Raleway, sans-serif" font-size="9" font-weight="800" fill="#0f3460">CAMAPUM</text>
+                </svg>
+            </div>
+            <h1>GRUPO WHATSAPP FAMILIA CAMAPUM</h1>
+            <p id="subtituloGrupo">MEMBROS QUE ESTÃO NO GRUPO</p>
+            <div class="stats-container">
+                <div class="stat-badge">
+                    <span class="stat-dot dot-green"></span>
+                    <span><span id="totalAtivos">223</span> ativos</span>
+                </div>
+                <div class="stat-badge highlight" id="aniversarioBadge" style="display: none;">
+                    <i class="fas fa-birthday-cake"></i>
+                    <span id="aniversarioNomes">🎉 Aniversariante(s) hoje!</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- FORM SECTION REMOVIDA -->
+
+        <!-- TABLE SECTION -->
+        <section class="table-section">
+            <div class="tabs">
+                <button type="button" class="tab-btn active" id="tabNoGrupo" onclick="setAba('no_grupo')">
+                    ESTÃO NO GRUPO <span class="tab-count">(<span id="countNoGrupo">0</span>)</span>
+                </button>
+                <button type="button" class="tab-btn" id="tabForaGrupo" onclick="setAba('fora_grupo')">
+                    NÃO ESTÃO NO GRUPO DO WHATSAPP <span class="tab-count">(<span id="countForaGrupo">0</span>)</span>
+                </button>
+            </div>
+            <div class="search-bar">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="pesquisa" placeholder="Pesquisar por nome, número ou telefone..." onkeyup="listar()">
+                </div>
+                <div class="search-info" id="searchInfo"></div>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr id="cabecalhoTabela">
+                            <th>Número</th>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Data Nasc.</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela"></tbody>
+                </table>
+            </div>
+
+            <div class="table-footer">
+                <span>Exibindo <strong id="exibindo">228</strong> de <strong id="total">228</strong> sócios</span>
+                <div class="footer-stats">
+                    <div class="footer-stat">
+                        <span class="stat-dot dot-green"></span>
+                        <span id="footerAtivos">223</span> ativos
+                    </div>
+                    <div class="footer-stat" id="footerAniversario" style="display: none;">
+                        <i class="fas fa-birthday-cake" style="color: #fbbf24;"></i>
+                        <span id="footerAniversarioNomes">aniversariante(s)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>GRUPO WHATSAPP FAMILIA CAMAPUM — MEMBROS QUE ESTÃO NO GRUPO — <span id="year">2026</span></p>
+    </footer>
+
+    <!-- MODAL DE CONFIRMAÇÃO -->
+    <div class="modal" id="modalConfirm">
+        <div class="modal-content">
+            <div class="modal-header">Confirmar exclusão</div>
+            <div class="modal-description">Tem certeza que deseja excluir o sócio <strong id="modalSocioName"></strong>? Esta ação não pode ser desfeita.</div>
+            <div class="modal-buttons">
+                <button class="btn-secondary" onclick="fecharModal()">Cancelar</button>
+                <button class="btn-delete" onclick="confirmarExcluir()">Excluir</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ─── DADOS ─────────────────────────────────────────────────────────────
+        const dadosIniciais = [
+            {"box":"01","socio":"EDISON","telefone":"","dataNascimento":"0000-01-05"},
+            {"box":"02","socio":"LARA","telefone":"","dataNascimento":"0000-01-11"},
+            {"box":"03","socio":"ANA LUCIA","telefone":"","dataNascimento":"0000-01-20"},
+            {"box":"04","socio":"VALENTINA","telefone":"","dataNascimento":"0000-01-23"},
+            {"box":"05","socio":"DEUZELI","telefone":"","dataNascimento":"0000-02-04"},
+            {"box":"06","socio":"MARY","telefone":"","dataNascimento":"0000-02-13"},
+            {"box":"07","socio":"PEDRO ENZO","telefone":"","dataNascimento":"0000-02-17"},
+            {"box":"08","socio":"MATHEUS","telefone":"","dataNascimento":"0000-02-28"},
+            {"box":"09","socio":"WELLISON","telefone":"","dataNascimento":"0000-03-04"},
+            {"box":"10","socio":"SOCORRO FILHA","telefone":"","dataNascimento":"0000-03-17"},
+            {"box":"11","socio":"JOÃO GUILHERME","telefone":"","dataNascimento":"0000-03-19"},
+            {"box":"12","socio":"THAIS","telefone":"","dataNascimento":"0000-03-19"},
+            {"box":"13","socio":"LUIS HENRIQUE","telefone":"","dataNascimento":"0000-03-23"},
+            {"box":"14","socio":"VONALDO","telefone":"","dataNascimento":"0000-04-14"},
+            {"box":"15","socio":"IAN JHEMES","telefone":"","dataNascimento":"0000-04-21"},
+            {"box":"16","socio":"LUIZ SOUZA","telefone":"99999841868","dataNascimento":"0000-04-23","noGrupoWhatsApp":true},
+            {"box":"17","socio":"SOCORRO CAMAPUM","telefone":"","dataNascimento":"0000-05-04"},
+            {"box":"18","socio":"THANIA","telefone":"","dataNascimento":"0000-05-06"},
+            {"box":"19","socio":"TASSY","telefone":"","dataNascimento":"0000-05-12"},
+            {"box":"20","socio":"SERGIO","telefone":"","dataNascimento":"0000-05-13"},
+            {"box":"21","socio":"SINTIA","telefone":"","dataNascimento":"0000-05-13"},
+            {"box":"22","socio":"INGRID VICTORIA","telefone":"","dataNascimento":"0000-05-16"},
+            {"box":"23","socio":"DIODEIA","telefone":"","dataNascimento":"0000-05-16"},
+            {"box":"24","socio":"JURANDIR JUNIOR","telefone":"","dataNascimento":"0000-05-27"},
+            {"box":"25","socio":"CONCEIÇÃO","telefone":"","dataNascimento":"0000-06-04"},
+            {"box":"26","socio":"ANNAJARA","telefone":"","dataNascimento":"0000-06-05"},
+            {"box":"27","socio":"AMARILDO","telefone":"","dataNascimento":"0000-06-20"},
+            {"box":"28","socio":"TELMA","telefone":"","dataNascimento":"0000-06-27"},
+            {"box":"29","socio":"JEAN CAMAPUM","telefone":"","dataNascimento":"0000-06-28"},
+            {"box":"30","socio":"SOUZA","telefone":"","dataNascimento":"0000-07-22"},
+            {"box":"31","socio":"THIAGO","telefone":"","dataNascimento":"0000-07-26"},
+            {"box":"32","socio":"AMANDA","telefone":"","dataNascimento":"0000-08-18"},
+            {"box":"33","socio":"RAFAEL","telefone":"","dataNascimento":"0000-09-08"},
+            {"box":"34","socio":"JOÃO GABRIEL","telefone":"","dataNascimento":"0000-09-30"},
+            {"box":"35","socio":"JEAN JUNIOR","telefone":"","dataNascimento":"0000-10-08"},
+            {"box":"36","socio":"FELIPE","telefone":"","dataNascimento":"0000-10-09"},
+            {"box":"37","socio":"WANDSON","telefone":"","dataNascimento":"0000-10-22"},
+            {"box":"38","socio":"VICTOR","telefone":"","dataNascimento":"0000-10-27"},
+            {"box":"39","socio":"DIRCYELLE","telefone":"","dataNascimento":"0000-11-07"},
+            {"box":"40","socio":"JESSICA","telefone":"","dataNascimento":"0000-12-05"},
+            {"box":"41","socio":"FRANCISCO","telefone":"","dataNascimento":"0000-12-15"},
+            {"box":"42","socio":"ANDREIA","telefone":"","dataNascimento":"0000-12-27"},
+            {"box":"43","socio":"ELZA VITORIA","telefone":"","dataNascimento":"0000-03-13"}
+        ];
+        const dadosIniciaisVersao = 'camapum-2026-03-23-v4';
+        const linkGrupoWhatsApp = 'https://chat.whatsapp.com/8f4czXNwEONGLyI1uJidVi?mode=gi_t';
+        const ABA_NO_GRUPO = 'no_grupo';
+        const ABA_FORA_GRUPO = 'fora_grupo';
+
+        let socios = [];
+        let editandoIndex = -1;
+        let excluirIndex = -1;
+        let abaAtual = ABA_NO_GRUPO;
+
+        // ─── INICIALIZAÇÃO ─────────────────────────────────────────────────────
+        function init() {
+            carregarDoStorage();
+            aplicarCorrecoes();
+            document.getElementById('year').textContent = new Date().getFullYear();
+            setAba(ABA_NO_GRUPO);
+        }
+
+        function normalizarSocios() {
+            let mudou = false;
+            socios.forEach(function(s) {
+                if (typeof s.noGrupoWhatsApp !== 'boolean') {
+                    s.noGrupoWhatsApp = false;
+                    mudou = true;
+                }
+            });
+            if (mudou) salvarNoStorage();
+        }
+
+        function carregarDoStorage() {
+            const versao = localStorage.getItem('socios_yate_versao');
+            const dados = localStorage.getItem('socios_yate');
+            if (dados && versao === dadosIniciaisVersao) {
+                socios = JSON.parse(dados);
+                // ─── MIGRAÇÃO: preenche dataNascimento ausente usando dadosIniciais ───
+                let migrado = false;
+                dadosIniciais.forEach(function(inicial) {
+                    if (!inicial.dataNascimento) return;
+                    const socio = socios.find(function(s) { return s.box === inicial.box; });
+                    if (socio && !socio.dataNascimento) {
+                        socio.dataNascimento = inicial.dataNascimento;
+                        migrado = true;
+                    }
+                });
+                if (migrado) salvarNoStorage();
+                // ─────────────────────────────────────────────────────────────────────
+            } else {
+                socios = JSON.parse(JSON.stringify(dadosIniciais));
+                salvarNoStorage();
+                localStorage.setItem('socios_yate_versao', dadosIniciaisVersao);
+            }
+            normalizarSocios();
+        }
+
+        function salvarNoStorage() {
+            localStorage.setItem('socios_yate', JSON.stringify(socios));
+        }
+        function aplicarCorrecoes() {
+            const alvo = socios.find(function(s) {
+                return s.socio && s.socio.toUpperCase().trim() === 'FRANCISCO DE ASSIS MAIA';
+            });
+            if (alvo) {
+                let ano = '1962';
+                if (alvo.dataNascimento && /^\d{4}-\d{2}-\d{2}$/.test(alvo.dataNascimento)) {
+                    ano = alvo.dataNascimento.split('-')[0];
+                }
+                alvo.dataNascimento = `${ano}-09-05`;
+                salvarNoStorage();
+            }
+        }
+
+        // ─── UTILITÁRIOS ───────────────────────────────────────────────────────
+        function isFalecido(nome) {
+            return nome.toUpperCase().includes('FALECIDO');
+        }
+
+        function isSemTelefone(tel) {
+            return !tel || tel.trim() === '';
+        }
+
+        function estaAniversariando(dataNascimento) {
+            if (!dataNascimento) return false;
+            try {
+                const hoje = new Date();
+                const [ano, mes, dia] = dataNascimento.split('-');
+                const mesAtual = String(hoje.getMonth() + 1).padStart(2, '0');
+                const diaAtual = String(hoje.getDate()).padStart(2, '0');
+                return mes === mesAtual && dia === diaAtual;
+            } catch {
+                return false;
+            }
+        }
+
+        function formatarDataNascimento(data) {
+            if (!data) return '—';
+            try {
+                const [ano, mes, dia] = data.split('-');
+                if (ano === '0000') return `${dia}/${mes}`;
+                const idade = new Date().getFullYear() - parseInt(ano);
+                return `${dia}/${mes} (${idade} anos)`;
+            } catch {
+                return '—';
+            }
+        }
+
+        function formatarTelefone(tel) {
+            const d = tel.replace(/\D/g, '');
+            if (d.length === 11) return `(${d.slice(0, 2)}) ${d.slice(2, 7)}-${d.slice(7)}`;
+            if (d.length === 10) return `(${d.slice(0, 2)}) ${d.slice(2, 6)}-${d.slice(6)}`;
+            return tel;
+        }
+
+        function abrirWhatsApp(telefone) {
+            if (isSemTelefone(telefone)) {
+                mostrarToast('Este sócio não possui telefone cadastrado.', 'warning');
+                return;
+            }
+            let limpo = telefone.replace(/\D/g, '');
+            if (!limpo.startsWith('55')) limpo = '55' + limpo;
+            window.open(`https://wa.me/${limpo}`, '_blank');
+        }
+
+        function abrirGrupoWhatsApp() {
+            const w = window.open(linkGrupoWhatsApp, '_blank');
+            if (w) w.opener = null;
+        }
+
+        function setAba(aba) {
+            abaAtual = aba;
+
+            const tabNoGrupo = document.getElementById('tabNoGrupo');
+            const tabForaGrupo = document.getElementById('tabForaGrupo');
+            if (tabNoGrupo) tabNoGrupo.classList.toggle('active', abaAtual === ABA_NO_GRUPO);
+            if (tabForaGrupo) tabForaGrupo.classList.toggle('active', abaAtual === ABA_FORA_GRUPO);
+
+            const subtitulo = document.getElementById('subtituloGrupo');
+            if (subtitulo) {
+                subtitulo.textContent = abaAtual === ABA_FORA_GRUPO
+                    ? 'NÃO ESTÃO NO GRUPO DO WHATSAPP'
+                    : 'MEMBROS QUE ESTÃO NO GRUPO';
+            }
+
+            const pesquisa = document.getElementById('pesquisa');
+            if (pesquisa) {
+                pesquisa.value = '';
+                pesquisa.placeholder = abaAtual === ABA_FORA_GRUPO
+                    ? 'Pesquisar por nome, número ou telefone...'
+                    : 'Pesquisar por nome ou número...';
+            }
+
+            const cabecalho = document.getElementById('cabecalhoTabela');
+            if (cabecalho) {
+                cabecalho.innerHTML = abaAtual === ABA_FORA_GRUPO
+                    ? `
+                        <th>Número</th>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Data Nasc.</th>
+                        <th>Ações</th>
+                    `
+                    : `
+                        <th>Número</th>
+                        <th>Nome</th>
+                        <th>Data Nasc.</th>
+                        <th>Ações</th>
+                    `;
+            }
+
+            listar();
+            atualizarEstatisticas();
+        }
+
+        function filtrarPorAba(lista) {
+            if (abaAtual === ABA_FORA_GRUPO) return lista.filter(function(s) { return s.noGrupoWhatsApp === true; });
+            return lista.filter(function(s) { return s.noGrupoWhatsApp !== true; });
+        }
+
+        // ─── CRUD ──────────────────────────────────────────────────────────────
+        function salvar() {
+            const socio = document.getElementById('socio').value.trim();
+            const box = document.getElementById('box').value.trim();
+            const telefone = document.getElementById('telefone').value.trim();
+            const dataNascimento = document.getElementById('dataNascimento').value;
+
+            if (!socio) {
+                mostrarToast('Digite o nome do sócio', 'warning');
+                return;
+            }
+
+            const dados = {
+                box,
+                socio: socio.toUpperCase(),
+                telefone,
+                dataNascimento: dataNascimento || undefined
+            };
+
+            if (editandoIndex !== -1) {
+                socios[editandoIndex] = dados;
+                mostrarToast('Sócio atualizado com sucesso!', 'success');
+            } else {
+                socios.push(dados);
+                mostrarToast('Sócio adicionado com sucesso!', 'success');
+            }
+
+            salvarNoStorage();
+            limpar();
+            listar();
+            atualizarEstatisticas();
+        }
+
+        function editar(index) {
+            const s = socios[index];
+            document.getElementById('socio').value = s.socio;
+            document.getElementById('box').value = s.box;
+            document.getElementById('telefone').value = s.telefone;
+            document.getElementById('dataNascimento').value = s.dataNascimento || '';
+            editandoIndex = index;
+            document.getElementById('formTitle').textContent = 'Editar Sócio';
+            document.getElementById('editBadge').style.display = 'inline-block';
+            document.getElementById('btnCancelar').style.display = 'inline-flex';
+            document.getElementById('btnSalvarText').textContent = 'Atualizar';
+            document.getElementById('socio').focus();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function abrirModalExcluir(index) {
+            excluirIndex = index;
+            document.getElementById('modalSocioName').textContent = socios[index].socio;
+            document.getElementById('modalConfirm').classList.add('active');
+        }
+
+        function fecharModal() {
+            document.getElementById('modalConfirm').classList.remove('active');
+            excluirIndex = -1;
+        }
+
+        function confirmarExcluir() {
+            if (excluirIndex !== -1) {
+                socios.splice(excluirIndex, 1);
+                salvarNoStorage();
+                listar();
+                atualizarEstatisticas();
+                mostrarToast('Sócio removido com sucesso!', 'success');
+                fecharModal();
+            }
+        }
+
+        function limpar() {
+            document.getElementById('socio').value = '';
+            document.getElementById('box').value = '';
+            document.getElementById('telefone').value = '';
+            document.getElementById('dataNascimento').value = '';
+            editandoIndex = -1;
+            document.getElementById('formTitle').textContent = 'Cadastrar Novo Sócio';
+            document.getElementById('editBadge').style.display = 'none';
+            document.getElementById('btnCancelar').style.display = 'none';
+            document.getElementById('btnSalvarText').textContent = 'Salvar';
+        }
+
+        // ─── LISTAGEM ──────────────────────────────────────────────────────────
+        function listar() {
+            const pesquisa = document.getElementById('pesquisa').value.toLowerCase().trim();
+            const tabela = document.getElementById('tabela');
+            tabela.innerHTML = '';
+
+            const base = filtrarPorAba(socios);
+            document.getElementById('total').textContent = base.length;
+            const mostrarTelefone = abaAtual === ABA_FORA_GRUPO;
+            const colspanNoResults = mostrarTelefone ? 5 : 4;
+
+            let filtrados = base.filter((s, i) => {
+                if (!pesquisa) return true;
+                return s.socio.toLowerCase().includes(pesquisa) ||
+                       s.box.toLowerCase().includes(pesquisa) ||
+                       (mostrarTelefone && s.telefone.toLowerCase().includes(pesquisa));
+            });
+
+            if (filtrados.length === 0) {
+                tabela.innerHTML = `
+                    <tr>
+                        <td colspan="${colspanNoResults}" class="no-results">
+                            <div>
+                                <i class="fas fa-search"></i>
+                                <p>Nenhum sócio encontrado</p>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+                document.getElementById('exibindo').textContent = '0';
+                document.getElementById('searchInfo').textContent = pesquisa ? `${filtrados.length} resultado(s) encontrado(s) para "${pesquisa}"` : '';
+                return;
+            }
+
+            filtrados.forEach((s, rowIdx) => {
+                const index = socios.indexOf(s);
+                const falecido = isFalecido(s.socio);
+                const semTel = isSemTelefone(s.telefone);
+                const aniversariando = estaAniversariando(s.dataNascimento);
+
+                const row = document.createElement('tr');
+                if (aniversariando) row.classList.add('aniversario');
+
+                const boxClass = s.box.startsWith('YCI') ? 'box-yci' : /[A-Za-z]/.test(s.box) ? 'box-alpha' : 'box-numeric';
+
+                row.innerHTML = `
+                    <td><span class="box-badge ${boxClass}">${s.box}</span></td>
+                    <td>
+                        <div class="socio-name ${falecido ? 'falecido' : ''}">
+                            ${aniversariando ? '<i class="fas fa-birthday-cake cake-icon"></i>' : ''}
+                            ${aniversariando && s.noGrupoWhatsApp !== true ? `<a href="#" class="nome-click" onclick="abrirGrupoWhatsApp(); return false;">${s.socio}</a>` : aniversariando && s.noGrupoWhatsApp === true && !semTel ? `<a href="#" class="nome-click" onclick="abrirWhatsApp('${s.telefone}'); return false;">${s.socio}</a>` : `<span>${s.socio}</span>`}
+                            ${falecido ? '<span style="font-size: 0.75rem; color: #9ca3af;">(falecido)</span>' : ''}
+                        </div>
+                    </td>
+                    ${mostrarTelefone ? `
+                    <td>
+                        ${semTel ? '<span class="sem-telefone">Sem telefone</span>' : `<div class="phone-number"><i class="fas fa-phone"></i> ${formatarTelefone(s.telefone)}</div>`}
+                    </td>
+                    ` : ''}
+                    <td>
+                        <span class="data-nasc ${aniversariando ? 'aniversario' : ''}">${formatarDataNascimento(s.dataNascimento)}</span>
+                    </td>
+                    <td>
+                        <div class="actions">
+                            <button class="btn-small btn-whatsapp" onclick="${abaAtual === ABA_FORA_GRUPO ? `abrirWhatsApp('${s.telefone}')` : 'abrirGrupoWhatsApp()'}" ${abaAtual === ABA_FORA_GRUPO && semTel ? 'disabled' : ''}>
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </button>
+                        </div>
+                    </td>
+                `;
+                tabela.appendChild(row);
+            });
+
+            document.getElementById('exibindo').textContent = filtrados.length;
+            document.getElementById('searchInfo').textContent = pesquisa ? `${filtrados.length} resultado(s) encontrado(s) para "${pesquisa}"` : '';
+        }
+
+        // ─── ESTATÍSTICAS ──────────────────────────────────────────────────────
+        function atualizarEstatisticas() {
+            const totalAtivos = socios.filter(s => !isFalecido(s.socio)).length;
+            const totalFalecidos = socios.filter(s => isFalecido(s.socio)).length;
+            const totalSemTel = socios.filter(s => isSemTelefone(s.telefone)).length;
+            const listAniversariantes = socios.filter(s => !isFalecido(s.socio) && estaAniversariando(s.dataNascimento));
+            const aniversariantes = listAniversariantes.length;
+            const countNoGrupo = socios.filter(s => s.noGrupoWhatsApp !== true).length;
+            const countForaGrupo = socios.filter(s => s.noGrupoWhatsApp === true).length;
+
+            const elAtivos = document.getElementById('totalAtivos');
+            if (elAtivos) elAtivos.textContent = totalAtivos;
+            document.getElementById('footerAtivos').textContent = totalAtivos;
+
+            const elCountNoGrupo = document.getElementById('countNoGrupo');
+            if (elCountNoGrupo) elCountNoGrupo.textContent = countNoGrupo;
+            const elCountForaGrupo = document.getElementById('countForaGrupo');
+            if (elCountForaGrupo) elCountForaGrupo.textContent = countForaGrupo;
+
+            if (aniversariantes > 0) {
+                const nomesComLinks = listAniversariantes.map(s => {
+                    const nomeFormatado = s.socio.trim().split(' ').map(p => p.charAt(0).toUpperCase() + p.slice(1).toLowerCase()).join(' ');
+                    if (s.noGrupoWhatsApp !== true) return `<a href="#" class="nome-click" onclick="abrirGrupoWhatsApp(); return false;">${nomeFormatado}</a>`;
+                    if (isSemTelefone(s.telefone)) return `<span>${nomeFormatado}</span>`;
+                    const tel = s.telefone.replace(/"/g, '&quot;');
+                    return `<a href="#" class="nome-click" onclick="abrirWhatsApp('${tel}'); return false;">${nomeFormatado}</a>`;
+                });
+                const textoBadge = aniversariantes === 1
+                    ? `🎂 Aniversariante hoje: ${nomesComLinks.join(', ')}! 🎉`
+                    : `🎂 Aniversariantes hoje: ${nomesComLinks.join(', ')}! 🎉`;
+                const textoFooter = aniversariantes === 1
+                    ? `${nomesComLinks.join(', ')} (aniversariante)`
+                    : `${nomesComLinks.join(', ')} (aniversariantes)`;
+
+                document.getElementById('aniversarioBadge').style.display = 'flex';
+                document.getElementById('aniversarioNomes').innerHTML = textoBadge;
+                document.getElementById('footerAniversario').style.display = 'flex';
+                document.getElementById('footerAniversarioNomes').innerHTML = textoFooter;
+            } else {
+                document.getElementById('aniversarioBadge').style.display = 'none';
+                document.getElementById('footerAniversario').style.display = 'none';
+            }
+        }
+
+        // ─── PDF ───────────────────────────────────────────────────────────────
+        function gerarPDF() {
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
+            script.onload = () => {
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF();
+                const largura = doc.internal.pageSize.getWidth();
+                const data = new Date().toLocaleString('pt-BR');
+
+                doc.setFillColor(29, 78, 216);
+                doc.rect(0, 0, largura, 40, 'F');
+
+                doc.setTextColor(255, 255, 255);
+                doc.setFontSize(20);
+                doc.setFont('helvetica', 'bold');
+                doc.text('GRUPO WHATSAPP FAMILIA CAMAPUM', largura / 2, 18, { align: 'center' });
+
+                doc.setFontSize(11);
+                doc.setFont('helvetica', 'normal');
+                doc.text('Relatório de Sócios', largura / 2, 27, { align: 'center' });
+                doc.text(`Gerado em: ${data}`, largura / 2, 34, { align: 'center' });
+
+                let y = 55;
+                doc.setFillColor(29, 78, 216);
+                doc.rect(10, y - 7, 190, 10, 'F');
+                doc.setTextColor(255, 255, 255);
+                doc.setFontSize(10);
+                doc.setFont('helvetica', 'bold');
+                doc.text('Número', 12, y);
+                doc.text('Nome', 40, y);
+                doc.text('Telefone', 155, y);
+                doc.setTextColor(0, 0, 0);
+                y += 10;
+
+                const listaPdf = filtrarPorAba(socios);
+                listaPdf.forEach((s, index) => {
+                    if (index % 2 === 0) doc.setFillColor(239, 246, 255);
+                    else doc.setFillColor(255, 255, 255);
+
+                    doc.rect(10, y - 7, 190, 10, 'F');
+                    doc.rect(10, y - 7, 190, 10);
+
+                    doc.setFont('helvetica', 'bold');
+                    doc.setFontSize(9);
+                    doc.text(s.box, 12, y);
+                    doc.setFont('helvetica', 'normal');
+                    doc.text(s.socio.substring(0, 40), 40, y);
+                    doc.text(s.telefone || '—', 155, y);
+
+                    y += 10;
+                    if (y > 280) {
+                        doc.addPage();
+                        y = 20;
+                    }
+                });
+
+                y += 10;
+                doc.setFontSize(12);
+                doc.setFont('helvetica', 'bold');
+                doc.text(`Total de Sócios: ${listaPdf.length}`, 10, y);
+
+                doc.save('Relatorio_Socios_Yate_Clube.pdf');
+                mostrarToast('PDF gerado com sucesso!', 'success');
+            };
+            script.onerror = () => mostrarToast('Erro ao carregar biblioteca de PDF.', 'error');
+            document.head.appendChild(script);
+        }
+
+        // ─── TOAST ────────────────────────────────────────────────────────────
+        function mostrarToast(mensagem, tipo = 'success') {
+            const toast = document.createElement('div');
+            toast.className = `toast ${tipo}`;
+            toast.textContent = mensagem;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 3000);
+        }
+
+        // ─── INICIAR ───────────────────────────────────────────────────────────
+        window.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
