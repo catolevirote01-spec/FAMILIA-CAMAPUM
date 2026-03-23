@@ -85,6 +85,32 @@
             font-weight: 500;
         }
 
+        .header-note {
+            margin-top: 0.35rem;
+            color: #e0e7ff;
+            font-size: 0.95rem;
+            font-weight: 500;
+            line-height: 1.35;
+            max-width: 820px;
+            text-align: center;
+        }
+
+        .header-note .title {
+            color: #ffffff;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .header-note .title-inline {
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        .header-note .line {
+            display: block;
+        }
+
         .stats-container {
             display: flex;
             flex-wrap: wrap;
@@ -797,7 +823,11 @@
                 </svg>
             </div>
             <h1>GRUPO WHATSAPP FAMILIA CAMAPUM</h1>
-            <p id="subtituloGrupo">MEMBROS QUE ESTÃO NO GRUPO</p>
+            <div id="subtituloGrupo" class="header-note">
+                <span class="title">Os aniversariantes que já estão no grupo:</span>
+                <span class="line">Basta clicar no nome do aniversariante para ser direcionado ao grupo.</span>
+                <span class="line"><span class="title-inline">Os aniversariantes que não estejam no grupo:</span> ao clicar no nome você será direcionado diretamente para o contato privado dele.</span>
+            </div>
             <div class="stats-container">
                 <div class="stat-badge">
                     <span class="stat-dot dot-green"></span>
@@ -926,9 +956,14 @@
             {"box":"40","socio":"JESSICA","telefone":"","dataNascimento":"0000-12-05"},
             {"box":"41","socio":"FRANCISCO","telefone":"","dataNascimento":"0000-12-15"},
             {"box":"42","socio":"ANDREIA","telefone":"","dataNascimento":"0000-12-27"},
-            {"box":"43","socio":"ELZA VITORIA","telefone":"","dataNascimento":"0000-03-13"}
+            {"box":"43","socio":"ELZA VITORIA","telefone":"","dataNascimento":"0000-03-13"},
+            {"box":"45","socio":"DELMAN JUNIOR","telefone":"99984945540","dataNascimento":"0000-07-25","noGrupoWhatsApp":true},
+            {"box":"46","socio":"JUNIOR DO BAM","telefone":"99984648844","dataNascimento":"0000-11-08","noGrupoWhatsApp":true},
+            {"box":"47","socio":"EDIVAM CAMAPUM","telefone":"99985481113","dataNascimento":"0000-05-18","noGrupoWhatsApp":true},
+            {"box":"48","socio":"ZE IRAN","telefone":"99984429077","dataNascimento":"0000-02-13","noGrupoWhatsApp":true},
+            {"box":"49","socio":"IRAN CAMAPUM","telefone":"99984802010","dataNascimento":"0000-07-25","noGrupoWhatsApp":true}
         ];
-        const dadosIniciaisVersao = 'camapum-2026-03-23-v4';
+        const dadosIniciaisVersao = 'camapum-2026-03-23-v7';
         const linkGrupoWhatsApp = 'https://chat.whatsapp.com/8f4czXNwEONGLyI1uJidVi?mode=gi_t';
         const ABA_NO_GRUPO = 'no_grupo';
         const ABA_FORA_GRUPO = 'fora_grupo';
@@ -1062,13 +1097,6 @@
             const tabForaGrupo = document.getElementById('tabForaGrupo');
             if (tabNoGrupo) tabNoGrupo.classList.toggle('active', abaAtual === ABA_NO_GRUPO);
             if (tabForaGrupo) tabForaGrupo.classList.toggle('active', abaAtual === ABA_FORA_GRUPO);
-
-            const subtitulo = document.getElementById('subtituloGrupo');
-            if (subtitulo) {
-                subtitulo.textContent = abaAtual === ABA_FORA_GRUPO
-                    ? 'NÃO ESTÃO NO GRUPO DO WHATSAPP'
-                    : 'MEMBROS QUE ESTÃO NO GRUPO';
-            }
 
             const pesquisa = document.getElementById('pesquisa');
             if (pesquisa) {
@@ -1223,6 +1251,7 @@
 
             filtrados.forEach((s, rowIdx) => {
                 const index = socios.indexOf(s);
+                const numeroFormatado = String(rowIdx + 1).padStart(2, '0');
                 const falecido = isFalecido(s.socio);
                 const semTel = isSemTelefone(s.telefone);
                 const aniversariando = estaAniversariando(s.dataNascimento);
@@ -1230,10 +1259,10 @@
                 const row = document.createElement('tr');
                 if (aniversariando) row.classList.add('aniversario');
 
-                const boxClass = s.box.startsWith('YCI') ? 'box-yci' : /[A-Za-z]/.test(s.box) ? 'box-alpha' : 'box-numeric';
+                const boxClass = 'box-numeric';
 
                 row.innerHTML = `
-                    <td><span class="box-badge ${boxClass}">${s.box}</span></td>
+                    <td><span class="box-badge ${boxClass}">${numeroFormatado}</span></td>
                     <td>
                         <div class="socio-name ${falecido ? 'falecido' : ''}">
                             ${aniversariando ? '<i class="fas fa-birthday-cake cake-icon"></i>' : ''}
